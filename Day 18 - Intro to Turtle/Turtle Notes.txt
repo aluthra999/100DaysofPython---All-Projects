@@ -1,0 +1,49 @@
+t.rt() instead of t.right()
+t.fd() instead of t.forward()
+t.lt() instead of t.left()
+t.bk() instead of t.backward()
+
+____________________________________
+
+➡️ = x-xis
+⬆️ = y-axis
+
+
+
+	    ⬆️
+	    ⬆️
+ -x,-y    ⬆️   +x,+y
+	    ⬆️
+⬅️⬅️⬅️⬅️🔴➡️➡️➡️➡️
+	    ⬇️
+	    ⬇️
+ -x,-y    ⬇️    +x,+y
+	    ⬇️ 
+
+____________________________________
+
+.bgcolor("color") - to change screen bg color
+
+______________________________________
+
+Changing the Screen Title:
+.title("My Turtle Program")
+______________________________________
+
+Changing the Turtle Size:
+.shapesize(1,5,10)
+
+Stretch length, Stretch width, Outline width
+
+______________________________________
+
+
+
+
+
+
+
+
+
+
+
