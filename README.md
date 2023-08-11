@@ -1,5 +1,5 @@
 # 100DaysofPython
-[100DaysofPython](https://www.udemy.com/course/100-days-of-code/) - Udemy Course by [Dr. Angela Yu.](https://twitter.com/yu_angela)
+[100DaysofPython](https://www.udemy.com/course/100-days-of-code/) - Udemy Course by [Dr. Angela Yu](https://twitter.com/yu_angela)
 
 **100 Days of Code**
 
