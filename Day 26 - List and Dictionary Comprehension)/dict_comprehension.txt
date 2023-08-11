@@ -1,0 +1,11 @@
+## -- Dictionary Comprehension -- ##
+
+{new_key:new_value for item in list}
+
+names = ['Alex', 'Beth', 'Carlos', 'Dave', 'Eleanor', 'Freddie']
+
+student_score = {student:random.randint(1, 100) for student in names}
+
+passed_students = {student:score for (student, score) in student_score.items() if score >= 60}
+
+failed_students = {student:score for (student, score) in student_score.items() if score <= 60}
