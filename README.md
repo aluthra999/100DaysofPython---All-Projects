@@ -21,7 +21,7 @@ This repository contains my progress and projects for the [100 Days of Code](htt
 
 ## Repository Structure
 
-- **Day_X:** Daily folders containing my progress, code snippets, and mini-projects completed that week.
+- **Day_X:** Daily folders containing my progress, code snippets, and mini-projects completed that day/week.
 
 - **Projects:** Folder containing larger coding projects developed during the course.
 
