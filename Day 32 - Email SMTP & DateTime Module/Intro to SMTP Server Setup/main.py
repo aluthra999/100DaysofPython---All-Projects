@@ -1,7 +1,7 @@
 import smtplib
 
-my_email = "pythonsmtpudemy@gmail.com"
-app_password = "cjrxivkavqvbtqwn"
+my_email = "YOUR_EMAIL@gmail.com"
+app_password = "YOUR_APP_PASSWORD"
 
 with smtplib.SMTP("smtp.gmail.com", 587) as connection:
     connection.starttls()
@@ -11,6 +11,6 @@ with smtplib.SMTP("smtp.gmail.com", 587) as connection:
     )
     connection.sendmail(
         from_addr=my_email,
-        to_addrs="pythonsmtpudemy@yahoo.com",
-        msg="Subject:Hello\n\nIs it Working?"
+        to_addrs="RECIPIENT@EMAIL.COM",
+        msg="Subject:SUBJECT\n\nBODY TEXT GOES HERE!?"
     )
