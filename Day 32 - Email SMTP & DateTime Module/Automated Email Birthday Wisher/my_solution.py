@@ -10,7 +10,7 @@ APP_PASSWORD = "YOUR_PASSWORD"
 # Get today's date
 today = datetime.now().date()
 
-# 1. Update the birthdays.csv
+# 1. Update and open the birthdays.csv
 with open('birthdays.csv', 'r') as file:
     csv_reader = csv.DictReader(file)
 
