@@ -1,6 +1,5 @@
 import requests
-from datetime import date
-from datetime import timedelta
+from datetime import date, timedelta
 from twilio.rest import Client
 
 STOCK_NAME = "TSLA"
@@ -110,18 +109,3 @@ if abs(percentage_difference) >= 0:
         )
 
         print(message.status)
-
-# Optional TODO: Format the message like this:
-"""
-TSLA: 🔺2%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to 
-file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of 
-the coronavirus market crash.
-or
-"TSLA: 🔻5%
-Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?. 
-Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to 
-file by the SEC The 13F filings show the funds' and investors' portfolio positions as of March 31st, near the height of
- the coronavirus market crash.
-"""
