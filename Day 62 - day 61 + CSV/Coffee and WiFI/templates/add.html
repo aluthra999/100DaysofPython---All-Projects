@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %}Add A New Cafe{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+
+      <h1>Add a new Café</h1>
+
+      <form method="POST">
+        {{ form.hidden_tag() }}
+
+        <div class="form-group">
+          {{ form.cafe.label(class="form-label") }}
+          {{ form.cafe(class="form-control", placeholder="Cafe Name") }}
+        </div>
+
+        <div class="form-group">
+          {{ form.location.label(class="form-label") }}
+          {{ form.location(class="form-control", placeholder="Location URL") }}
+        </div>
+
+        <div class="form-group">
+          {{ form.open_time.label(class="form-label") }}
+          {{ form.open_time(class="form-control", placeholder="Open Time") }}
+        </div>
+
+        <div class="form-group">
+          {{ form.close_time.label(class="form-label") }}
+          {{ form.close_time(class="form-control", placeholder="Closing Time") }}
+        </div>
+
+        <div class="form-group">
+          {{ form.coffee_rating.label(class="form-label") }}
+          {{ form.coffee_rating(class="form-select") }}
+        </div>
+
+        <div class="form-group">
+          {{ form.wifi_rating.label(class="form-label") }}
+          {{ form.wifi_rating(class="form-select") }}
+        </div>
+
+        <div class="form-group">
+          {{ form.power_rating.label(class="form-label") }}
+          {{ form.power_rating(class="form-select") }}
+        </div>
+
+        <div class="form-group">
+          {{ form.submit(class="btn btn-primary") }}
+        </div>
+      </form>
+
+      <p class="space-above"><a href="{{ url_for('cafes') }}">See all cafes</a></p>
+    </div>
+  </div>
+</div>
+{% endblock %}
