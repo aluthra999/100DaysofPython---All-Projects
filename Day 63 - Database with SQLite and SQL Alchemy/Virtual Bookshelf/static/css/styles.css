@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    background: linear-gradient(214deg, #36d5ac, #b4b566, #eac476);
+    background-size: 600% 600%;
+    animation: AnimationName 30s ease infinite;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #B71C1C;
+    text-decoration: underline;
+}
+
+.container {
+    padding: 3% 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@keyframes AnimationName {
+    0%{background-position:93% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:93% 0%}
+}
+
+input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+
+.add-form button {
+    margin-top: 10px;
+}
+
+button a, a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li {
+    margin: 7px 0;
+}
+
+.col {
+    margin: 7px 0;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    {% block styles %}
+      {{ bootstrap.load_css() }}
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    {% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand">📚 BookShelf</a>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" disabled>
+        </form>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+
+  <div class="container">
+  <footer class="py-3 my-4">
+    <p class="text-center text-muted">© {{year}} Ankit Luthra</p>
+  </footer>
+</div>
+  </body>
+</html>

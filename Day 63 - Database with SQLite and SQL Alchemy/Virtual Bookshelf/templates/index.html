@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Library</title>
-  </head>
-  <body>
-    <h1>My Library</h1>
-    {% if books %}
-      <ul>
-        {% for book in books %}
-        <li>{{book.title}} - {{ book.author }} - {{ book.rating }}/10</li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <p>Library is empty.</p>
-    {% endif %}
+{% extends 'base.html' %}
+{% block title %}Library{% endblock %}
 
-    <a href="{{ url_for('add') }}">Add New Book</a>
-  </body>
-</html>
+{% block content %}
+    <div class="container">
+        <h1>My Library</h1>
+        <br>
+        {% if books %}
+            <div class="row">
+                {% for book in books %}
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                          <div class="card-body">
+                            <h5 class="card-title">{{book.title}}</h5>
+                            <p class="card-text">{{ book.author }}</p>
+                            <p class="card-text">{{ book.rating }}</p>
+                            <button type="button" class="btn btn-secondary btn-sm"><a href="{{ url_for('edit_rating', book_id=book.id) }}">Edit Rating</a></button>
+                            <button type="button" class="btn btn-danger btn-sm"><a href="{{ url_for('delete', id=book.id) }}">Delete</a></button>
+                          </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% else %}
+          <p>Library is empty.</p>
+        {% endif %}
+    </div>
+    <button type="button" class="btn btn-dark btn-lg"><a href="{{ url_for('add') }}">Add New Book</a></button>
+
+{% endblock %}

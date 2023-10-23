@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Add Book</title>
-  </head>
-  <body>
+{% extends 'base.html' %}
+{% block title %}Add Book{% endblock %}
+
+{% block content %}
+<div class="container add-book">
+    <h1>Add New Book</h1>
     <form action="" method="POST">
       <label >Book Name</label>
-      <input name="title" type="text" />
-
+      <input name="title" type="text" /> <br>
       <label >Book Author</label>
-      <input name="author" type="text" />
-
+      <input name="author" type="text" /><br>
       <label >Rating</label>
-      <input name="rating" type="text" />
-      <button type="submit">Add Book</button>
+      <input name="rating" type="text" /><br>
+      <button type="submit" class="btn btn-success">Add Book</button>
     </form>
-  </body>
-</html>
+</div>
+{% endblock %}
